@@ -1,17 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="th.bku.apichaya.calcalories.MainActivity">
+    tools:context=".activities.MainActivity">
 
-    <TextView
-        android:text="Hello World!"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <!--<TextView-->
+        <!--android:id="@+id/date"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="42"-->
+        <!--android:textSize="42px"-->
+        <!--android:textAlignment="center"-->
+        <!--android:text="TODAY"-->
+
+        <!--/>-->
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/cal_status"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50"-->
+        <!--android:layout_below="@id/date"-->
+        <!--android:weightSum="4"-->
+        <!--android:orientation="horizontal"-->
+        <!-->-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/total_column"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:weightSum="2"-->
+            <!--android:orientation="vertical"-->
+            <!-->-->
+            <!--<TextView-->
+                <!--android:id="@+id/total"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="20"-->
+                <!--android:textAlignment="center"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="TOTAL"-->
+                <!--android:layout_gravity="center_horizontal" />-->
+            <!--<TextView-->
+                <!--android:id="@+id/num_total"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="#009ACD"-->
+                <!--android:textAlignment="center"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_below="@id/total"-->
+                <!--android:text="1200"-->
+                <!--android:layout_gravity="center_horizontal" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/use_column"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/total_column"-->
+            <!--android:layout_weight="1"-->
+            <!--android:weightSum="2"-->
+            <!--android:orientation="vertical"-->
+            <!-->-->
+            <!--<TextView-->
+                <!--android:id="@+id/use"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="20"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="USE"-->
+                <!--android:layout_gravity="center_horizontal" />-->
+            <!--<TextView-->
+                <!--android:id="@+id/num_use"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textColor="#009ACD"-->
+                <!--android:layout_below="@id/use"-->
+                <!--android:text="0"-->
+                <!--android:layout_gravity="center_horizontal" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/gain_column"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/use_column"-->
+            <!--android:layout_weight="1"-->
+            <!--android:weightSum="2"-->
+            <!--android:orientation="vertical"-->
+            <!-->-->
+            <!--<TextView-->
+                <!--android:id="@+id/gain"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="20"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="GAIN"-->
+                <!--android:layout_gravity="center_horizontal" />-->
+            <!--<TextView-->
+                <!--android:id="@+id/num_gain"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textColor="#009ACD"-->
+                <!--android:layout_below="@id/gain"-->
+                <!--android:text="0"-->
+                <!--android:layout_gravity="center_horizontal" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/remain_column"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/use_column"-->
+            <!--android:layout_weight="1"-->
+            <!--android:weightSum="2"-->
+            <!--android:orientation="vertical"-->
+            <!-->-->
+            <!--<TextView-->
+                <!--android:id="@+id/remain"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="20"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="REMAIN"-->
+                <!--android:layout_gravity="center_horizontal" />-->
+            <!--<TextView-->
+                <!--android:id="@+id/num_remain"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textColor="#009ACD"-->
+                <!--android:layout_below="@id/remain"-->
+                <!--android:text="1200"-->
+                <!--android:layout_gravity="center_horizontal" />-->
+        <!--</LinearLayout>-->
+
+        <!-->-->
+    <!--</>-->
+
+    <!--// Line-->
+    <!--<View-->
+        <!--android:id="@+id/line1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="3dp"-->
+        <!--android:background="#009ACD"-->
+        <!--android:layout_below="@id/cal_status"-->
+        <!--/>-->
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/meal_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="30"-->
+        <!--android:layout_below="@id/cal_status"-->
+        <!--android:weightSum="9"-->
+        <!--android:baselineAligned="false">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/meal"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="3"-->
+            <!--android:text="Meal"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/total_cal"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="3"-->
+            <!--android:text="Total Calories"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/total_cal_cal"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="2"-->
+            <!--android:text="0"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/add_food_button"-->
+            <!--android:layout_width="27dp"-->
+            <!--android:layout_height="27dp"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:gravity="right"-->
+            <!--android:background="@drawable/add"-->
+            <!--android:layout_toRightOf="@id/total_cal_cal"-->
+
+            <!--android:allowUndo="false"-->
+            <!--android:backgroundTint="white"-->
+            <!--android:backgroundTintMode="src_in" />-->
+
+
+
+    <!--</LinearLayout>-->
+
+
+
 </RelativeLayout>
