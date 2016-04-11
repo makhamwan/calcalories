@@ -16,11 +16,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initComponents();
+    }
+
+    public void initComponents(){
     }
 
     @Override
     public void onStart() {
         super.onStart();
-   }
+
+    }
 
 }
